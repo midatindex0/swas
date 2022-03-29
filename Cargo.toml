@@ -1,14 +1,34 @@
 [package]
 name = "swas"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["lonely-code-cube"]
 edition = "2021"
 description = "The swas library made as a joke"
 license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/lonely-code-cube/swas"
+repository = "https://github.com/lonely-code-cube/swas"
+keywords = ["swas", "youtube", "video", "cli"]
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[features]
+default = ["application"]
+application = ["clap"]
+
+[lib]
+name = "swas"
+path = "src/lib.rs"
+
+[[bin]]
+name = "swas"
+path = "src/bin/swas.rs"
+
 [dependencies]
+reqwest = { version = "0.11.10", features = ["json", "blocking"] }
+tinyjson = "2"
+clap = { version = "3.1.6", features = ["derive", "cargo"], optional = true }
 
 [profile.dev]
 opt-level = 0
