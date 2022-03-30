@@ -1,15 +1,15 @@
 [package]
 name = "swas"
-version = "0.3.0"
+version = "0.3.1"
 authors = ["lonely-code-cube"]
 edition = "2021"
-description = "The swas library made as a joke"
+description = "Swas is a rust library + CLI tool  that tells you when swas will upload new video through complex calculations. It also lets you search and play youtube videos of swas and other channels. Searching about youtube channels is also an option. Basically it's a youtube search cli tool written in rust."
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/lonely-code-cube/swas"
 repository = "https://github.com/lonely-code-cube/swas"
 keywords = ["swas", "youtube", "video", "cli"]
-categories = ["Command line utilities"]
+categories = ["command-line-interface"]
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
